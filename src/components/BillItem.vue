@@ -6,6 +6,7 @@
         <td> {{price}} </td>
         <td> {{quantity}} </td>
         <td><button @click="Delete">X</button></td>
+        <td> {{price * quantity}}</td>
     </tr>
      <tr v-if="!edit">
           <td><input type="text"></td>

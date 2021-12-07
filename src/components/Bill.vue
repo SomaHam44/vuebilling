@@ -6,6 +6,7 @@
       <th>Ár</th>
       <th>Darabszám</th>
       <th>Operations</th>
+      <th>Összérték</th>
   </tr>
   </table>
  
@@ -42,12 +43,12 @@ export default {
 
 <style>
 th {
-  width: 55vw;
+  width: 15vw;
  margin-inline: auto;
 }
 td {
-  width: 60vw;
- text-align:center;
+  width: 15vw;
+  margin-inline: auto;
 }
 
 </style> 
