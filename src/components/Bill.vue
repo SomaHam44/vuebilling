@@ -12,7 +12,8 @@
   <BillItem
     v-for="bill in bills"
     v-bind:key="bill.title" :bill="bill"
-    @bill-item-changed="Changed" />
+    @bill-item-changed="Changed"
+    @bill-item-deleted="Deleted" />
 </div>
 </template>
 
@@ -28,6 +29,9 @@ export default {
       this.$emit('bill-price-changed', e),
       this.$emit('bill-quantity-changed', e)
 
+    },
+    Deleted(e) {
+      this.$emit('bill-item-deleted', e)
     }
 
   }
@@ -38,8 +42,8 @@ export default {
 
 <style>
 th {
- width: 60vw;
- text-align:center;
+  width: 55vw;
+ margin-inline: auto;
 }
 td {
   width: 60vw;

@@ -41,9 +41,7 @@ export default {
                 this.edit = true
             },
             Delete() {
-                this.title = "",
-                this.price = "",
-                this.quantity = ""
+                this.$emit('bill-item-deleted', {original: this.bill})
 
             },
             Save() {
