@@ -1,30 +1,25 @@
 <template>
 <table>
-    <div v-if="!edit">
-    <tr>
-      <th>Név</th>
-      <th>Ár</th>
-      <th>Darabszám</th>
-      <th>Operations</th>
-    </tr>
-    <tr>
+    
+    <tr v-if="!edit">
         <td> {{title}} </td>
         <td> {{price}} </td>
         <td> {{quantity}} </td>
         <td><button @click="Delete">X</button></td>
-      <tr>
-          <td><input type="text" v-model="title">
-          <td><input type="number" v-model="price">
-          <td><input type="number" v-model="quantity">
-          <td><button @click="Edit">Edit</button></td>
     </tr>
-    </div>
-    <div v-if="edit">
-        <td><input type="text" v-model="title">
+     <tr v-if="!edit">
+          <td><input type="text"></td>
+          <td><input type="number"></td>
+          <td><input type="number"></td>
+          <td><button @click="Edit">Edit</button></td>
+      </tr>
+        <tr v-if="edit">
+        <td><input type="text" v-model="title"></td>
           <td><input type="number" v-model="price">
-          <td><input type="number" v-model="quantity">
-          <td><button @click="Save">Save</button></td>    
-    </div>
+          <td><input type="number" v-model="quantity"></td>
+          <td><button @click="Save">Save</button></td>
+        </tr>
+      
 
 </table>
   

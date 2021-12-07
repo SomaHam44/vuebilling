@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
     <Bill :bills="bills"  
       @bill-item-changed="Changed"
       @bill-item-deleted="Delete"/>

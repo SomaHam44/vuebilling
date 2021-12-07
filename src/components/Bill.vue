@@ -1,14 +1,19 @@
 <template>
 <div>
-
-
+  <table>
+  <tr v-if="!edit">
+      <th>Név</th>
+      <th>Ár</th>
+      <th>Darabszám</th>
+      <th>Operations</th>
+  </tr>
+  </table>
+ 
   <BillItem
     v-for="bill in bills"
     v-bind:key="bill.title" :bill="bill"
     @bill-item-changed="Changed" />
-
-  </div>
-
+</div>
 </template>
 
 <script>
@@ -32,5 +37,13 @@ export default {
 </script>
 
 <style>
+th {
+ width: 60vw;
+ text-align:center;
+}
+td {
+  width: 60vw;
+ text-align:center;
+}
 
 </style> 
