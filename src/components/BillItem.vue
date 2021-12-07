@@ -31,12 +31,24 @@ export default {
             price: this.bill.price,
             quantity: this.bill.quantity,
             edit: false,
-            delete: false
+            delete: false,
+        }
+    },
+        methods: {
+            Edit() {
+                this.edit = true
+            },
+            Delete() {
+                this.delete = true
+
+            }
+
+
         }
          
     }
 
-}
+
 </script>
 
 <style>
