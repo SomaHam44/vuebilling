@@ -52,6 +52,27 @@ export default {
             },
             Save() {
                 this.edit = false
+                this.$emit('bill-title-changed', {
+                    original: this.bill,
+                    new: {
+                        title: this.title
+                    },
+
+                }),
+
+                this.$emit('bill-price-changed', {
+                    original: this.bill,
+                    new: {
+                        price: this.price,
+                    },
+                }),
+
+                this.$emit('bill-quantity-changed', {
+                    original: this.bill,
+                    new : {
+                        quantity: this.quantity
+                    }
+                })
 
             }
 
