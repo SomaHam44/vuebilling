@@ -5,14 +5,14 @@
         <td> {{title}} </td>
         <td> {{price}} </td>
         <td> {{quantity}} </td>
-        <td><button @click="Delete">X</button></td>
+        <td><button @click="Delete">X</button><button @click="Edit">Edit</button></td>
         <td> {{price * quantity}}</td>
     </tr>
      <tr v-if="!edit">
           <td><input type="text"></td>
           <td><input type="number"></td>
           <td><input type="number"></td>
-          <td><button @click="Edit">Edit</button></td>
+          <td><button @click="New">New</button></td>
       </tr>
         <tr v-if="edit">
         <td><input type="text" v-model="title"></td>
@@ -42,7 +42,9 @@ export default {
                 this.edit = true
             },
             Delete() {
-                this.$emit('bill-item-deleted', {original: this.bill})
+                this.title = "";
+                this.price = "";
+                this.quantity = "";
 
             },
             Save() {
@@ -69,7 +71,7 @@ export default {
                     }
                 })
 
-            }
+            },
 
 
         }
