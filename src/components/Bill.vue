@@ -1,14 +1,14 @@
 <template>
-  <table>
-      <th>Név</th>
-      <th>Ár</th>
-      <th>Darabszám</th>
+  <BillItem>
 
-    </table>
 </template>
 
 <script>
+import BillItem from './components/BillItem.vue'
 export default {
+  props: ['bills'],
+  components: {BillItem}
+  
 
 }
 </script>
