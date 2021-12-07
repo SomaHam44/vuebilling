@@ -34,7 +34,7 @@ export default {
             title: this.bill.title,
             price: this.bill.price,
             quantity: this.bill.quantity,
-            edit: false,
+            edit: false
         }
     },
         methods: {
@@ -42,9 +42,6 @@ export default {
                 this.edit = true
             },
             Delete() {
-                this.title = "";
-                this.price = "";
-                this.quantity = "";
 
             },
             Save() {
