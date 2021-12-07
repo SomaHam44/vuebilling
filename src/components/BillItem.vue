@@ -39,7 +39,6 @@ export default {
             price: this.bill.price,
             quantity: this.bill.quantity,
             edit: false,
-            delete: false,
         }
     },
         methods: {
@@ -47,7 +46,7 @@ export default {
                 this.edit = true
             },
             Delete() {
-                this.delete = true
+                this.delete
 
             },
             Save() {
