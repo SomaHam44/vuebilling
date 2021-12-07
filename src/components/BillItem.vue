@@ -1,13 +1,19 @@
 <template>
 <table>
+    <tr>
       <th>Név</th>
       <th>Ár</th>
       <th>Darabszám</th>
+    </tr>
+    <tr>
+        <td> {{title}} </td>
+        <td> {{price}} </td>
+        <td> {{quantity}} </td>
       <tr>
           <td><input type="text" v-model="title">
           <td><input type="number" v-model="price">
           <td><input type="number" v-model="quantity">
-        </tr>
+    </tr>
 
 </table>
   

@@ -6,7 +6,7 @@
 <script>
 import BillItem from './components/BillItem.vue'
 export default {
-  props: ['bills'],
+  props: ['rows'],
   components: {BillItem}
   
 
