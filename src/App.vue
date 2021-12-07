@@ -15,7 +15,7 @@ export default {
   },
   data() {
     return {
-      rows: [
+      bills: [
         {
           title: 'Kerék',
           price: 100,
