@@ -1,7 +1,8 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <Bill   />
+    <Bill :bills="bill"  
+      @bill-item-changed="Changed/>
   </div>
 </template>
 
@@ -37,6 +38,17 @@ export default {
           quantity: 321
         },
       ]
+    }
+  },
+  methods: {
+    Changed(e) {
+      this.bills.map(function (bill) {
+        if (bill.title != e.original.title || bill.price != e.original.price || bill.quantity != e.original.quantity) {
+          return bill,
+        }
+
+      }
+
     }
   }
 }

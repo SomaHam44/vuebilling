@@ -11,7 +11,7 @@
         <td> {{title}} </td>
         <td> {{price}} </td>
         <td> {{quantity}} </td>
-        <td><button @click="Törlés">X</button></td>
+        <td><button @click="Delete">X</button></td>
       <tr>
           <td><input type="text" v-model="title">
           <td><input type="number" v-model="price">
@@ -46,7 +46,7 @@ export default {
                 this.edit = true
             },
             Delete() {
-                this.delete
+                this.title = ""
 
             },
             Save() {
