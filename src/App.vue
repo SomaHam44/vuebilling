@@ -10,6 +10,7 @@
 <script>
 import Bill from './components/Bill.vue'
 
+
 export default {
   name: 'App',
   components: {

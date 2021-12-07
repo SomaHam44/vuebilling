@@ -12,7 +12,8 @@
 </template>
 
 <script>
-import BillItem from './components/BillItem.vue'
+import BillItem from './BillItem.vue'
+
 export default {
   props: ['bills'],
   components: {BillItem},
