@@ -52,6 +52,9 @@ export default {
       })
 
     },
+    Deleted(e) {
+      this.bills = this.bills.filter((bill) => e.original != bill)
+    }
     
   }
 }
