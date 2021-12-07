@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <Bill :bills="bill"  
+    <Bill :bills="bills"  
       @bill-item-changed="Changed"
       @bill-item-deleted="Delete"/>
   </div>

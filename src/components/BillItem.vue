@@ -46,7 +46,9 @@ export default {
                 this.edit = true
             },
             Delete() {
-                this.title = ""
+                this.title = "",
+                this.price = "",
+                this.quantity = ""
 
             },
             Save() {
